@@ -22,20 +22,6 @@ A premium, interactive Python terminal utility for capturing, decoding, and anal
 
 ---
 
-##  Screenshots
-
-> 📸 _Screenshots coming soon — drop your images in the `screenshots/` folder and link them here._
-
-| Dashboard (Live Capture) | Interactive Analyzer Shell |
-|:---:|:---:|
-| *(screenshot here)* | *(screenshot here)* |
-
-| PCAP File Reader | Protocol Stats View |
-|:---:|:---:|
-| *(screenshot here)* | *(screenshot here)* |
-
----
-
 ##  Installation & Setup
 
 ### Prerequisites
