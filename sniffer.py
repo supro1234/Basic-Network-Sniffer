@@ -1,4 +1,5 @@
 import sys
+import io
 import os
 import time
 import ctypes
@@ -33,8 +34,13 @@ except ImportError:
     print("Error: Rich is not installed. Please install it using 'pip install rich'.")
     sys.exit(1)
 
+# Fix Windows terminal encoding to support Unicode/emoji characters
+if sys.platform == "win32":
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
+
 # Initialize Rich Console
-console = Console()
+console = Console(force_terminal=True)
 
 # Global statistics and captured packets
 captured_packets = []
